@@ -7,13 +7,28 @@
   <style>
     body {
       font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(to top, #ffffff 0%, #86efac 100%);
+      position: relative;
+    }
+    .top-left-img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 320px;
+      max-width: 40vw;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    .center-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      margin: 0;
-      background: linear-gradient(to top, #ffffff 0%, #86efac 100%);
+      text-align: center;
     }
     h1 { margin: 0 0 1.5rem 0; color: #222; }
     .birthday {
@@ -33,9 +48,12 @@
   </style>
 </head>
 <body>
-  <h1>Hashim Al Amin</h1>
-  <a class="birthday" href="https://www.cnbc.com/" target="_blank" rel="noopener noreferrer">
-    🎂 Birthday: 09/22/2009
-  </a>
+  <img class="top-left-img" src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/assistant/19/5b/d7/195bd72b-e9c2-4037-af25-f45b80fdf58d/83d14ee7-53fa-48ec-982c-b63e1e438b98/27e179f1-3354-4be7-9d38-e120450cd582/a9270050-61eb-4466-b57f-b735a1a5744a.jpg" alt="Soccer match image">
+  <div class="center-content">
+    <h1>Hashim Al Amin</h1>
+    <a class="birthday" href="https://www.cnbc.com/" target="_blank" rel="noopener noreferrer">
+      🎂 Birthday: 09/22/2009
+    </a>
+  </div>
 </body>
 </html>
